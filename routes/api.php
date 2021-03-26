@@ -19,3 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('team-first','Api\ApiController');
+
+// token authentication con restful API
+// la vedremo in seguito,qui get semplice,li faremo un' apiresource
