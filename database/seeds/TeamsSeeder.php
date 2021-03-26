@@ -12,15 +12,15 @@ class TeamsSeeder extends Seeder
      */
     public function run()
     {
-        // for ($i=0;$i<10;$i++) {
-        //     $team = new Team();
-        //     $team->name=$faker->text(50);
-        //     $team->city=$faker->text(80);
-        //     $team->colours=$faker->name();
-        //     $team->stadium=$faker->name();
-        //     $team->flag ='https://via.placeholder.com/90';
-        //     $team->save();
-        // }
+        for ($i=0;$i<10;$i++) {
+            $team = new Team();
+            $team->name=$faker->text(50);
+            $team->city=$faker->text(80);
+            $team->colours=$faker->name();
+            $team->stadium=$faker->name();
+            $team->flag ='https://via.placeholder.com/90';
+            $team->save();
+        }
         // $team=new Team();
         // $team->name='Inter';
         // $team->colours='nerazzurri';
