@@ -9,6 +9,8 @@ class ApiController extends Controller
 {
   public function __invoke(){
     $team= Team::orderBy('id','asc')->first();
+    // $teams=Team::all();
+    // dd($teams);
     // 1) sarebbe $team->toArray() ma il metodo json
     // riesce a serializzare partendo anche da un modello
     // 2)potrei prendere anche $teams=Team::all()
