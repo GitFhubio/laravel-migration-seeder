@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('team-first','Api\ApiController')->middleware('auth');
+Route::get('team-first','Api\ApiController');
